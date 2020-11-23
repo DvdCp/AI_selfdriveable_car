@@ -22,7 +22,6 @@ public class KartAgent : Agent
     {
         checkpointManager.ResetCheckpoints();
         _kartController.Respawn();
-        Debug.Log("Kart respawned & episode restarted");
     }
     
     public override void CollectObservations(VectorSensor sensor)
@@ -36,7 +35,7 @@ public class KartAgent : Agent
         var input = actions.ContinuousActions;
         
         _kartController.Steer(input[0]);
-        _kartController.Throttle(Mathf.FloorToInt(input[1]));
+        _kartController.Throttle(input[1]);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)

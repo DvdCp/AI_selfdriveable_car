@@ -2,23 +2,29 @@
     "CarAI": {
         "checkpoints": [
             {
-                "steps": 499992,
-                "file_path": "results\\AI_selfdriveable_car_1\\CarAI\\CarAI-499992.nn",
-                "reward": 0.18181818181818182,
-                "creation_time": 1606159200.2433157
+                "steps": 499973,
+                "file_path": "results\\AI_selfdriveable_car_1\\CarAI\\CarAI-499973.nn",
+                "reward": 7.5,
+                "creation_time": 1606166691.1104884
             },
             {
-                "steps": 500056,
-                "file_path": "results\\AI_selfdriveable_car_1\\CarAI\\CarAI-500056.nn",
-                "reward": 0.18181818181818182,
-                "creation_time": 1606159200.57012
+                "steps": 999968,
+                "file_path": "results\\AI_selfdriveable_car_1\\CarAI\\CarAI-999968.nn",
+                "reward": 7.5,
+                "creation_time": 1606167088.644085
+            },
+            {
+                "steps": 1000015,
+                "file_path": "results\\AI_selfdriveable_car_1\\CarAI\\CarAI-1000015.nn",
+                "reward": 7.5,
+                "creation_time": 1606167088.98448
             }
         ],
         "final_checkpoint": {
-            "steps": 500056,
+            "steps": 1000015,
             "file_path": "results\\AI_selfdriveable_car_1\\CarAI.nn",
-            "reward": 0.18181818181818182,
-            "creation_time": 1606159200.57012
+            "reward": 7.5,
+            "creation_time": 1606167088.98448
         }
     },
     "metadata": {

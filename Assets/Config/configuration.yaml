@@ -1,5 +1,7 @@
 default_settings: null
-behaviors: {}
+behaviors: 
+  CarAI:
+    max_steps: 1000000
 env_settings:
   env_path: ..\..\..\..\Desktop\AI_selfdriveable_car.exe
   env_args: null

@@ -17,7 +17,7 @@ public class KartController : MonoBehaviour
     private void FixedUpdate()
     {
         //Follow Collider & Stabilization
-        transform.position = rectangle.transform.position + new Vector3(0f, 0.20f, 0f);
+        transform.position = rectangle.transform.position + new Vector3(0f, -0.95f, 0f);
         
         //Forward Acceleration
         rectangle.AddForce(kartModel.transform.forward * currentSpeed, ForceMode.Acceleration);
@@ -37,11 +37,13 @@ public class KartController : MonoBehaviour
         rotate = (steering * direction) * amount;
     }
 
-    public void Throttle(int input) // Method for AI actions
+    public void Throttle(float input) // Method for AI actions
     {
         speed = acceleration * input;
-        currentSpeed = Mathf.SmoothStep(currentSpeed, speed, Time.deltaTime * 12f); speed = 0f;
-        currentRotate = Mathf.Lerp(currentRotate, rotate, Time.deltaTime * 4f); rotate = 0f;
+        currentSpeed = Mathf.SmoothStep(currentSpeed, speed, Time.deltaTime * 12f); 
+        speed = 0f;
+        currentRotate = Mathf.Lerp(currentRotate, rotate, Time.deltaTime * 4f); 
+        rotate = 0f;
     }
 
     public void Respawn()
