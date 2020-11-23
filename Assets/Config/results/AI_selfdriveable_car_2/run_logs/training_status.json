@@ -1,0 +1,29 @@
+{
+    "CarAI": {
+        "checkpoints": [
+            {
+                "steps": 499996,
+                "file_path": "results\\AI_selfdriveable_car_2\\CarAI\\CarAI-499996.nn",
+                "reward": -0.3611111111111111,
+                "creation_time": 1606149249.9045763
+            },
+            {
+                "steps": 500060,
+                "file_path": "results\\AI_selfdriveable_car_2\\CarAI\\CarAI-500060.nn",
+                "reward": -0.3611111111111111,
+                "creation_time": 1606149250.228942
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500060,
+            "file_path": "results\\AI_selfdriveable_car_2\\CarAI.nn",
+            "reward": -0.3611111111111111,
+            "creation_time": 1606149250.228942
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.0",
+        "tensorflow_version": "2.3.1"
+    }
+}
