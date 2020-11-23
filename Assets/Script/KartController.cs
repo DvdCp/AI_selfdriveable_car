@@ -13,8 +13,7 @@ public class KartController : MonoBehaviour
     public float acceleration = 30f;
     public float steering = 50f;
     public float gravity = 10f;
-    public LayerMask layerMask;
-    
+
     private void FixedUpdate()
     {
         //Follow Collider & Stabilization
@@ -28,10 +27,7 @@ public class KartController : MonoBehaviour
 
         //Steering
        transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y + currentRotate, 0), Time.deltaTime * 5f);
-        
-        //Normal Rotation
-        //kartNormal.up = Vector3.Lerp(kartNormal.up, hitNear.normal, Time.deltaTime * 8.0f);
-        //kartNormal.Rotate(0, transform.eulerAngles.y, 0);
+       
     }
     
     public void Steer(float dir)
