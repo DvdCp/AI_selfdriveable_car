@@ -1,0 +1,23 @@
+{
+    "CarAI": {
+        "checkpoints": [
+            {
+                "steps": 175789,
+                "file_path": "results\\AI_selfdriveable_car_2\\CarAI\\CarAI-175789.nn",
+                "reward": null,
+                "creation_time": 1606159544.6868534
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 175789,
+            "file_path": "results\\AI_selfdriveable_car_2\\CarAI.nn",
+            "reward": null,
+            "creation_time": 1606159544.6868534
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.0",
+        "tensorflow_version": "2.3.1"
+    }
+}
