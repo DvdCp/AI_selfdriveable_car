@@ -60,6 +60,12 @@ public class CheckpointManager : MonoBehaviour
         
     }
 
+    public void OnWallCollision(Wall wall)
+    {
+        kartAgent.AddReward(-0.5f);
+    }
+
+
     private void SetNextCheckpoint()
     {
         

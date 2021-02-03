@@ -30,10 +30,10 @@ public class KartController : MonoBehaviour
        
     }
     
-    public void Steer(float dir)
+    public void Steer(float input)
     {
-        int direction = dir > 0 ? 1 : -1;  // Dx or Sx ?
-        float amount = Mathf.Abs((dir));
+        int direction = input > 0 ? 1 : -1;  // Dx or Sx ?
+        float amount = Mathf.Abs((input));
         rotate = (steering * direction) * amount;
     }
 

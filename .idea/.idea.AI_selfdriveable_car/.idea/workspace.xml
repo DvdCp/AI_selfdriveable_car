@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f430e4-53ab-43e1-aa3a-01a3b4ca0bf3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AI_selfdriveable_car/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI_selfdriveable_car/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AI_selfdriveable_car/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI_selfdriveable_car/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI_selfdriveable_car/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI_selfdriveable_car/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Config/results/AI_selfdriveable_car_2/CarAI/CarAI-175789.ckpt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ML-Agents/Timers/SampleScene_timers.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ML-Agents/Timers/SampleScene_timers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/KartAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/KartAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CheckpointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CheckpointManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/KartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/KartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +25,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/CheckpointManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/KartAgent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Checkpoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CheckpointCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/CheckpointCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Checkpoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/CheckpointManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/KartAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/KartController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/CheckpointManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Wall.cs" />
       </list>
     </option>
   </component>
@@ -78,7 +84,9 @@
       <workItem from="1605997755697" duration="7166000" />
       <workItem from="1606035550116" duration="10473000" />
       <workItem from="1606153943437" duration="423000" />
-      <workItem from="1606155400301" duration="5948000" />
+      <workItem from="1606155400301" duration="6542000" />
+      <workItem from="1606213083696" duration="1262000" />
+      <workItem from="1606218288875" duration="3030000" />
     </task>
     <servers />
   </component>

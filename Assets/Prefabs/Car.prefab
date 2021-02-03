@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 669347055360848099}
   - component: {fileID: 409051277590209190}
   - component: {fileID: 2187414053289136849}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wheel_frontRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 718956136969663834}
   - component: {fileID: 718956136969663783}
   - component: {fileID: 2789452772947915145}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: raceFuture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,9 +140,9 @@ MonoBehaviour:
     VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 5022602860645237092, guid: 278612a92f15d894180215806a713566, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 915fdeb725a3351449e08cadb9146e57, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 1
   m_BehaviorName: CarAI
   TeamId: 0
   m_UseChildSensors: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kartModel: {fileID: 1040480709602442440}
   rectangle: {fileID: 718956138416523566}
-  respawnPoint: {fileID: 0}
+  respawnPoint: {fileID: 2125402866639149776}
   acceleration: 30
   steering: 50
   gravity: 10
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718956136728259055}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718956136728259052}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -297,9 +297,9 @@ GameObject:
   - component: {fileID: 718956138416523563}
   - component: {fileID: 718956138416523560}
   - component: {fileID: 718956138416523566}
-  - component: {fileID: 718956138416523562}
   - component: {fileID: 718956138416523573}
-  m_Layer: 0
+  - component: {fileID: 453865549}
+  m_Layer: 2
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,8 +314,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718956138416523567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 2.4579}
   m_Children: []
   m_Father: {fileID: 718956136728259055}
   m_RootOrder: 1
@@ -336,27 +336,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718956138416523567}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Mass: 100
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &718956138416523562
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718956138416523567}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5, y: 0.5, z: 2.7}
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &718956138416523573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,6 +361,19 @@ MonoBehaviour:
   kartAgent: {fileID: 718956136969663834}
   nextCheckPointToReach: {fileID: 0}
   timerLabel: {fileID: 0}
+--- !u!135 &453865549
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718956138416523567}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3006720240983165726
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 6035431688983551547}
   - component: {fileID: 183488240979358016}
   - component: {fileID: 6683304769230258063}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wheel_backLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 2833372900212096540}
   - component: {fileID: 3618716481671505605}
   - component: {fileID: 8988714812656935327}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125402866639149776}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RespawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 1473484315812154845}
   - component: {fileID: 8529962646578462991}
   - component: {fileID: 968159349807312197}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wheel_backRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 7609379768371492317}
   - component: {fileID: 5981585344381238863}
   - component: {fileID: 2455573555904261437}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: wheel_frontLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

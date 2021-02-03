@@ -13,6 +13,7 @@
           <e p="CheckpointManager.cs" t="Include" />
           <e p="KartAgent.cs" t="Include" />
           <e p="KartController.cs" t="Include" />
+          <e p="Wall.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
