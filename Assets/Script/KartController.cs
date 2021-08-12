@@ -12,14 +12,14 @@ public class KartController : MonoBehaviour
     [Header("Parameters")]
     public float acceleration = 30f;
     public float steering = 50f;
-    public float gravity = 10f;
+    public float gravity = 9f;
 
     private void FixedUpdate()
     {
-        //Follow Collider & Stabilization
-        transform.position = rectangle.transform.position + new Vector3(0f, -0.95f, 0f);
+        //Follow Collider & Stabilization (applying offset for visual effect)
+        transform.position = rectangle.transform.position + new Vector3(0f, -1.15f, 0f);
         
-        //Forward Acceleration
+        //Acceleration
         rectangle.AddForce(kartModel.transform.forward * currentSpeed, ForceMode.Acceleration);
 
         //Gravity

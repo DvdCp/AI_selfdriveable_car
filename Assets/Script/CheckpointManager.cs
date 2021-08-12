@@ -11,7 +11,7 @@ public class CheckpointManager : MonoBehaviour
     public KartAgent kartAgent;
     public Checkpoint nextCheckPointToReach;
     public Text timerLabel;
-    
+
     private int CurrentCheckpointIndex;
     private List<Checkpoint> _checkpoints;
     
@@ -36,7 +36,7 @@ public class CheckpointManager : MonoBehaviour
 
         if (TimeLeft < 0f)
         {
-            kartAgent.AddReward(-1.0f);
+            kartAgent.AddReward(-0.1f);
             kartAgent.EndEpisode();
         }
        
@@ -48,21 +48,21 @@ public class CheckpointManager : MonoBehaviour
         
         if (nextCheckPointToReach.gameObject.tag.Equals("Goal"))
         {
-            kartAgent.AddReward(2.5f);
+            kartAgent.AddReward(0.2f);
             kartAgent.EndEpisode();
         }
         else
         {
             CurrentCheckpointIndex++;
-            kartAgent.AddReward(1.0f);
+            kartAgent.AddReward(0.1f);
             SetNextCheckpoint();
         }
         
     }
-
+    
     public void OnWallCollision(Wall wall)
     {
-        kartAgent.AddReward(-0.5f);
+        kartAgent.AddReward(-0.1f);
     }
 
 
